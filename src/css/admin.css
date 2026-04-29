@@ -1,0 +1,33 @@
+.admin-container {
+  padding: 30px;
+}
+
+.admin-tabs {
+  margin: 20px 0;
+}
+
+.admin-tabs button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.admin-tabs button:hover {
+  background: #0056b3;
+}
+
+.admin-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
