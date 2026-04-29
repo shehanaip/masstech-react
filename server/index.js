@@ -116,8 +116,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
       ],
 
       success_url:
-        "https://masstech-api.onrender.com/success?session_id={CHECKOUT_SESSION_ID}",
-      cancel_url: "https://masstech-api.onrender.com/store"
+        "https://masstech-react-1.onrender.com/success?session_id={CHECKOUT_SESSION_ID}",
+      cancel_url: "https://masstech-react-1.onrender.com/store"
     });
 
     console.log("✅ SESSION CREATED:", session.id);
