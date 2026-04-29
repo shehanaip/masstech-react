@@ -16,7 +16,7 @@ function Admin() {
 
     try {
       const res = await fetch(
-        `https://masstech-react.vercel.app/api/admin/${type}`,
+        `https://masstech-react.onrender.com/api/admin/${type}`,
         {
           headers: {
             "admin-key": adminKey,

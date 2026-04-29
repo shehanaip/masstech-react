@@ -58,7 +58,7 @@ function WebDev() {
     }
 
     try {
-      const res = await fetch("https://masstech-react.vercel.app/api/service-request", {
+      const res = await fetch("https://masstech-react.onrender.com/api/service-request", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

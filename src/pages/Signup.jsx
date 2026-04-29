@@ -31,7 +31,7 @@ function Signup() {
     }
 
     try {
-      const res = await fetch("https://masstech-react.vercel.app/api/auth/signup", {
+      const res = await fetch("https://masstech-react.onrender.com/api/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

@@ -25,7 +25,7 @@ function Store() {
       localStorage.setItem("lastProduct", product.name);
 
       const res = await fetch(
-        "https://masstech-react.vercel.app/api/create-checkout-session",
+        "https://masstech-react.onrender.com/api/create-checkout-session",
         {
           method: "POST",
           headers: {

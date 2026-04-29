@@ -34,7 +34,7 @@ function Success() {
 
       // Save purchase to backend
       if (session_id && user) {
-        fetch("https://masstech-react.vercel.app/api/save-purchase", {
+        fetch("https://masstech-react.onrender.com/api/save-purchase", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

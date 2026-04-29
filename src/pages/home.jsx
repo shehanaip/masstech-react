@@ -13,7 +13,7 @@ function Home() {
 
   useEffect(() => {
     // fake loading + API call together
-    fetch("https://masstech-react.vercel.app")
+    fetch("https://masstech-react.onrender.com")
       .then(res => res.text())
       .then(data => setApiData(data))
       .catch(err => console.log(err));
