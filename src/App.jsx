@@ -19,20 +19,20 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services/software" element={<Software />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/services/webdev" element={<WebDev />} />
-        <Route path="/services/GraphicDesign" element={<GraphicDesign />} />
-        <Route path="/services/Seo" element={<Seo />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/Store" element={<Store />} />
-        <Route path="/success" element={<Success />} />
-        <Route path="/admin-login" element={<AdminLogin />} />
-        <Route path="/admin" element={<Admin />} />
+<Route path="/" element={<Home />} />
+<Route path="/contact" element={<Contact />} />
+<Route path="/about" element={<About />} />
+<Route path="/services/software" element={<Software />} />
+<Route path="/services/webdev" element={<WebDev />} />
+<Route path="/services/graphic-design" element={<GraphicDesign />} />
+<Route path="/services/seo" element={<Seo />} />
+<Route path="/login" element={<Login />} />
+<Route path="/signup" element={<Signup />} />
+<Route path="/dashboard" element={<Dashboard />} />
+<Route path="/store" element={<Store />} />
+<Route path="/success" element={<Success />} />
+<Route path="/admin-login" element={<AdminLogin />} />
+<Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );
