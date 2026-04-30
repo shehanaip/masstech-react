@@ -61,6 +61,7 @@ function Navbar() {
 
             {desktopServiceOpen && (
               <div className="dropdown-menu-custom">
+
                 <Link to="/services/software" onClick={() => setDesktopServiceOpen(false)}>
                   Software Development
                 </Link>
@@ -68,13 +69,15 @@ function Navbar() {
                 <Link to="/services/webdev" onClick={() => setDesktopServiceOpen(false)}>
                   Web Development
                 </Link>
-                                <Link to="/services/GraphicDesign" onClick={() => setDesktopServiceOpen(false)}>
-                  Graphic Desing
+
+                <Link to="/services/graphic-design" onClick={() => setDesktopServiceOpen(false)}>
+                  Graphic Design
                 </Link>
-                                <Link to="/services/Seo" onClick={() => setDesktopServiceOpen(false)}>
-                  Seo Optimization
+
+                <Link to="/services/seo" onClick={() => setDesktopServiceOpen(false)}>
+                  SEO Optimization
                 </Link>
-                
+
               </div>
             )}
           </li>
@@ -82,11 +85,13 @@ function Navbar() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-                    <li>
-            <Link to="/About">About</Link>
+
+          <li>
+            <Link to="/about">About</Link>
           </li>
-                              <li>
-            <Link to="/Store">Store</Link>
+
+          <li>
+            <Link to="/store">Store</Link>
           </li>
 
           {/* USER */}
@@ -122,9 +127,7 @@ function Navbar() {
           <FontAwesomeIcon icon={faXmark} style={{ color: "red", fontSize: "22px" }} />
         </button>
 
-        <Link onClick={closeAll} to="/">
-          Home
-        </Link>
+        <Link onClick={closeAll} to="/">Home</Link>
 
         {/* MOBILE SERVICES */}
         <div className="side-dropdown">
@@ -146,11 +149,13 @@ function Navbar() {
               <Link onClick={closeAll} to="/services/webdev">
                 Web Development
               </Link>
-                            <Link onClick={closeAll} to="/services/GraphicDesign">
-                Graphic Desing
+
+              <Link onClick={closeAll} to="/services/graphic-design">
+                Graphic Design
               </Link>
-                            <Link onClick={closeAll} to="/services/Seo">
-                Seo Optimization
+
+              <Link onClick={closeAll} to="/services/seo">
+                SEO Optimization
               </Link>
 
             </div>
@@ -158,15 +163,11 @@ function Navbar() {
 
         </div>
 
-        <Link onClick={closeAll} to="/contact">
-          Contact
-        </Link>
-                <Link onClick={closeAll} to="/About">
-          About
-        </Link>
-                       <Link onClick={closeAll} to="/Store">
-          Store
-        </Link>
+        <Link onClick={closeAll} to="/contact">Contact</Link>
+
+        <Link onClick={closeAll} to="/about">About</Link>
+
+        <Link onClick={closeAll} to="/store">Store</Link>
 
         {/* USER MOBILE */}
         {user ? (
