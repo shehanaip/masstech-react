@@ -1,6 +1,4 @@
-const path = require("path");
 require("dotenv").config();
-
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -118,10 +116,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
       ],
 
       success_url:
-        "https://masstech-react.onrender.com/success?session_id={CHECKOUT_SESSION_ID}",
-
-      cancel_url:
-        "https://masstech-react.onrender.com/store"
+        "https://masstech-react-1.onrender.com/success?session_id={CHECKOUT_SESSION_ID}",
+      cancel_url: "https://masstech-react-1.onrender.com/store"
     });
 
     console.log("✅ SESSION CREATED:", session.id);
@@ -178,19 +174,15 @@ app.get("/api/admin/purchases", adminAuth, async (req, res) => {
 });
 
 /* =========================
-   SERVE REACT BUILD
+   TEST
 ========================= */
-
-app.use(express.static(path.join(__dirname, "../dist")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../dist/index.html"));
+app.get("/", (req, res) => {
+  res.send("");
 });
 
 /* =========================
    SERVER
 ========================= */
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
